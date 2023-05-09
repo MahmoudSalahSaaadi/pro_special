@@ -21,6 +21,7 @@ export default {
       src: "~/plugins/vue-splide.js",
       mode: "client",
     },
+    "~/plugins/vue-fragment",
   ],
 
   loading: {

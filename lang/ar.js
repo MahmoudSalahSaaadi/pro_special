@@ -1,5 +1,5 @@
 export default {
-  sdsad: "سيبيسبيسبيسب",
+  sdsad: "عربي",
   asd: "سيبيسبيسبيسب",
   sdssadsasadsadsadasddsaad: "سيبيسبيسبيسب",
   sdssadsadsaad: "سيبيسبيسبيسب",

@@ -33,11 +33,12 @@
           </ul>
         </div>
         <div class="flex items-center gap-6">
-          <button
+          <!-- <button
             class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]"
           >
             Sign in
-          </button>
+          </button> -->
+          <langBtn />
           <ion-icon
             onclick="onToggleMenu(this)"
             name="menu"
@@ -46,7 +47,9 @@
         </div>
       </nav>
     </header>
-    dsfsfsdf
+    <h1 class="text-center p-4 text-red-600 text-xl m-4">
+      {{ $t("sdsad") }}
+    </h1>
     <slideHome />
   </section>
 </template>
