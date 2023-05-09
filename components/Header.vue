@@ -46,6 +46,8 @@
         </div>
       </nav>
     </header>
+    dsfsfsdf
+    <slideHome />
   </section>
 </template>
 
