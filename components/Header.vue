@@ -16,16 +16,16 @@
             class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8"
           >
             <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
+              <a class="hover:text-gray-500" href="#">{{ $t("asd") }}</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Solution</a>
+              <a class="hover:text-gray-500" href="#">{{ $t("asd") }}</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Resource</a>
+              <a class="hover:text-gray-500" href="#">{{ $t("asd") }}</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">Developers</a>
+              <a class="hover:text-gray-500" href="#">{{ $t("asd") }}</a>
             </li>
             <li>
               <a class="hover:text-gray-500" href="#">Pricing</a>

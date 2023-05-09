@@ -1,4 +1,4 @@
 export default {
   sdsad: "en",
-  sdsسسسسad: "en",
+  asd: "test-en",
 };
