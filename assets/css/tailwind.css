@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "neosans-regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("~/assets/fonts/NeoSansArabicRegular.ttf");
+  }
+
+  @font-face {
+    font-family: "neosans-medium";
+    font-style: normal;
+    font-weight: 500;
+    src: url("~/assets/fonts/NeoSansArabicMedium.ttf");
+  }
+
+  @font-face {
+    font-family: "neosans-bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("~/assets/fonts/NeoSansArabicBold.ttf");
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
