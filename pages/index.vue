@@ -1,5 +1,6 @@
 <template>
-  <Header />
+  <!-- <Header /> -->
+  <section></section>
 </template>
 
 <script>

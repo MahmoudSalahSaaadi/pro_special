@@ -1,7 +1,10 @@
 <template>
-  <Nuxt />
+  <fragment>
+    <Header />
+    <Nuxt />
 
-  <!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+  </fragment>
 </template>
 
 <script>
