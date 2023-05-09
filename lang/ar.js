@@ -6,4 +6,5 @@ export default {
   sdssadsfsdfdsdsasadsadsadasddsaad: "سيبيسبيسبيسب",
   sdssaddsfdsfssadsaad: "سيبيسبيسبيسب",
   mahmoud: "sadsadsadsadsadsad",
+  TextDecoderStream: "sadsadsadsadsadsad",
 };
