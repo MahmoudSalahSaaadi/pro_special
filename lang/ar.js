@@ -5,4 +5,5 @@ export default {
   sdssadsadsaad: "سيبيسبيسبيسب",
   sdssadsfsdfdsdsasadsadsadasddsaad: "سيبيسبيسبيسب",
   sdssaddsfdsfssadsaad: "سيبيسبيسبيسب",
+  mahmoud: "sadsadsadsadsadsad",
 };
