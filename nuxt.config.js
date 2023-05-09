@@ -37,7 +37,35 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    ["nuxt-i18n"],
+    "@nuxtjs/axios",
+    [
+      "nuxt-i18n",
+      {
+        baseUrl: process.env.BASE_URL,
+        strategy: "prefix_except_default",
+        detectBrowserLanguage: false,
+        locales: [
+          {
+            name: "english",
+            code: "en",
+            file: "en.js",
+            iso: "en-US",
+          },
+          {
+            name: "العربية",
+            code: "ar",
+            file: "ar.js",
+            iso: "ar-AR",
+          },
+        ],
+        lazy: true,
+        langDir: "lang/",
+        defaultLocale: "ar",
+        vueI18n: {
+          fallbackLocale: "ar",
+        },
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

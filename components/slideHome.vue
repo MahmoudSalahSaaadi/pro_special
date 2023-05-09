@@ -12,7 +12,9 @@
           <img src="~assets/images/Mask Group 14874.png" alt="" srcset="" />
         </splide-slide>
 
-        <splide-slide> <p>sadsadsad</p> </splide-slide>
+        <splide-slide>
+          <p>{{ $t("sdsad") }}</p>
+        </splide-slide>
       </splide>
     </client-only>
   </section>
