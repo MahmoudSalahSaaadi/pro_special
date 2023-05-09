@@ -3,4 +3,6 @@ export default {
   asd: "سيبيسبيسبيسب",
   sdssadsasadsadsadasddsaad: "سيبيسبيسبيسب",
   sdssadsadsaad: "سيبيسبيسبيسب",
+  sdssadsfsdfdsdsasadsadsadasddsaad: "سيبيسبيسبيسب",
+  sdssaddsfdsfssadsaad: "سيبيسبيسبيسب",
 };
