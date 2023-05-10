@@ -22,6 +22,8 @@ export default {
       mode: "client",
     },
     "~/plugins/vue-fragment",
+    '~/plugins/vue-js-modal.js',
+
   ],
 
   loading: {

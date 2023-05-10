@@ -1,6 +1,9 @@
 <template>
   <!-- <Header /> -->
-  <section></section>
+  <section>
+    <WeAreDifferent />
+    <modalTest />
+  </section>
 </template>
 
 <script>

@@ -9,6 +9,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          lg: '2rem',
+        },
+      },
       fontFamily: {
         montser: "Montserrat",
         neosansRegular: "neosans-regular",

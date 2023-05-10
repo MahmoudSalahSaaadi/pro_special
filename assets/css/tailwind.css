@@ -24,8 +24,28 @@
     src: url("~/assets/fonts/NeoSansArabicBold.ttf");
   }
 
+  :root {
+    --space-xl: 60px;
+    --space-lg: 32px;
+    --space: 22px;
+    --space-md: 16px;
+    --space-sm: 8px;
+    --main-3: theme(colors.black);
+
+  }
+  
+
   body {
     overflow-x: hidden;
     overflow-y: auto;
   }
+  .v--modal-overlay {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
 }
+
+/* @layer components {
+  .d-container {
+    @apply container overflow-hidden max-w-1450;
+  }
+} */
