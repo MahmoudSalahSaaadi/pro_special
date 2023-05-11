@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-center">
     <div class="w-full">
-      <form class="shadow-md rounded px-8 pt-6 pb-8 flex justify-center item-center w-full">
+      <form
+        class="shadow-md rounded px-8 pt-6 pb-8 flex justify-center item-center w-full"
+      >
         <ValidationObserver
           ref="form"
           class="gap-5 w-full lg:grid lg:grid-cols-2 d-flex-col"
