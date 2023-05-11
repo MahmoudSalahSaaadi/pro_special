@@ -9,15 +9,15 @@
 </template>
 
 <script>
-import VueSkeletonLoader from 'skeleton-loader-vue'
+import VueSkeletonLoader from "skeleton-loader-vue";
 
 export default {
-  name: 'TheSkeleton',
+  name: "TheSkeleton",
   components: { VueSkeletonLoader },
   props: {
     type: {
       type: String,
-      default: 'rect',
+      default: "rect",
     },
     width: {
       type: Number,
@@ -29,15 +29,15 @@ export default {
     },
     animation: {
       type: String,
-      default: 'wave',
+      default: "wave",
     },
     waveColor: {
       type: String,
-      default: 'rgba(255, 255, 255, 0.2)',
+      default: "rgba(255, 255, 255, 0.2)",
       validator(value) {
-        return /^(rgba)/.test(value)
+        return /^(rgba)/.test(value);
       },
     },
   },
-}
+};
 </script>
