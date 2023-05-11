@@ -1,3 +1,13 @@
 @import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 @import 'vue-js-modal/dist/styles.css';
 
+.layout-transition-enter-active,
+.layout-transition-leave-active {
+  transition: opacity 0.1s;
+  transition-timing-function: ease-out;
+}
+
+.layout-transition-enter,
+.layout-transition-leave-to {
+  opacity: 0;
+}

@@ -55,7 +55,6 @@
               name="eclubs_search"
               :placeholder="$t('eclubNameHere')"
               class="p-3 w-full h-full text-lg placeholder:text-[color:var(--gray-3)] text-[color:var(--black-1)] bg-white border-0 outline-none shadow-[0px_3px_10px_rgba(0,0,0,0.1)] font-neosansRegular pe-8 custom-input"
-              @input="onInput"
               @keyup.enter="$modal.hide('eclubs-search-modal')"
             />
           </div>

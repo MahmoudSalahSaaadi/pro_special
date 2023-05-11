@@ -31,9 +31,7 @@
     --space-md: 16px;
     --space-sm: 8px;
     --main-3: theme(colors.black);
-
   }
-  
 
   body {
     overflow-x: hidden;
@@ -49,3 +47,12 @@
     @apply container overflow-hidden max-w-1450;
   }
 } */
+@layer utilities {
+  .direction-ltr {
+    direction: ltr;
+  }
+
+  .direction-rtl {
+    direction: rtl;
+  }
+}
