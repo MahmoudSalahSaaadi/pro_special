@@ -22,10 +22,13 @@
     </transition>
   </div> -->
   <section class="w-full">
-    <div class="flex flex-row justify-between items-center">
-      <span class="flex flex-row gap-4 md:hidden">
-        <button @click.prevent="$modal.show('eclubs-search-modal')">
-          <SvgSearch />
+    <div class="flex flex-row justify-center items-center">
+      <span class="flex flex-row gap-4 justify-center items-center">
+        <button
+          class="p-4 text-xl bg-green-300 text-black m-8 rounded-lg"
+          @click.prevent="$modal.show('eclubs-search-modal')"
+        >
+          sign in
         </button>
       </span>
     </div>
@@ -38,27 +41,7 @@
         width="80%"
         classes="!top-[190px] bg-white rounded-md"
       >
-        <div
-          class="w-full"
-          :class="[$i18n.locale === 'ar' ? 'direction-rtl' : 'direction-ltr']"
-        >
-          <div
-            class="overflow-hidden w-full rounded-md border border-[color:var(--main-3)] d-flex-row"
-          >
-            <button type="submit" class="ltr:ml-3 rtl:mr-3">
-              <SvgSearch color="fill-[color:var(--main-3)]" class="w-6" />
-            </button>
-
-            <input
-              v-model="query"
-              type="text"
-              name="eclubs_search"
-              :placeholder="$t('eclubNameHere')"
-              class="p-3 w-full h-full text-lg placeholder:text-[color:var(--gray-3)] text-[color:var(--black-1)] bg-white border-0 outline-none shadow-[0px_3px_10px_rgba(0,0,0,0.1)] font-neosansRegular pe-8 custom-input"
-              @keyup.enter="$modal.hide('eclubs-search-modal')"
-            />
-          </div>
-        </div>
+        <veeValidateTest />
       </modal>
     </div>
   </section>

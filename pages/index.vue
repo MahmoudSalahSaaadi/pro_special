@@ -3,7 +3,6 @@
   <section>
     <WeAreDifferent />
     <modalTest />
-    
   </section>
 </template>
 

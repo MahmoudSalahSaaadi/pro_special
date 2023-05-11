@@ -23,6 +23,8 @@ export default {
     },
     "~/plugins/vue-fragment",
     '~/plugins/vue-js-modal.js',
+    '~/plugins/vee-validate.js',
+
 
   ],
 
@@ -79,13 +81,25 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    transpile: [
+      "vee-validate/dist/rules"
+    ],
+    parallel: true,
     postcss: {
       postcssOptions: {
         plugins: {
+          'postcss-import': {},
           tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
+          autoprefixer: {
+            options: {
+              browsers: [
+                'last 4 versions'
+              ]
+            }
+          },
+          ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
+        }
+      }
     },
   },
 };
