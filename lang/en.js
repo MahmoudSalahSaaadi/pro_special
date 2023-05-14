@@ -4,7 +4,6 @@ export default {
   firstNameValidation: "first name between 3 to 64 characters",
   password: "min 10 number",
 
-
   alw: {
     different: {
       experts: {
