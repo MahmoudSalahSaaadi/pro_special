@@ -21,11 +21,11 @@ export default {
       src: "~/plugins/vue-splide.js",
       mode: "client",
     },
+    { src: "~/plugins/lottie", mode: "client" },
+
     "~/plugins/vue-fragment",
-    '~/plugins/vue-js-modal.js',
-    '~/plugins/vee-validate.js',
-
-
+    "~/plugins/vue-js-modal.js",
+    "~/plugins/vee-validate.js",
   ],
 
   loading: {
@@ -81,25 +81,21 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [
-      "vee-validate/dist/rules"
-    ],
+    transpile: ["vee-validate/dist/rules"],
     parallel: true,
     postcss: {
       postcssOptions: {
         plugins: {
-          'postcss-import': {},
+          "postcss-import": {},
           tailwindcss: {},
           autoprefixer: {
             options: {
-              browsers: [
-                'last 4 versions'
-              ]
-            }
+              browsers: ["last 4 versions"],
+            },
           },
-          ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
-        }
-      }
+          ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
+        },
+      },
     },
   },
 };

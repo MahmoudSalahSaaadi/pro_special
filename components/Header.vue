@@ -46,6 +46,12 @@
           ></ion-icon>
         </div>
       </nav>
+      <div
+        ref="lottie"
+        role="button"
+        class="absolute bottom-0 left-1/2 w-28 h-28 -translate-x-1/2 cursor-pointer bg-green"
+        @click.prevent="scrollDown"
+      ></div>
     </header>
     <h1 class="text-center p-4 text-red-600 text-xl m-4">
       {{ $t("sdsad") }}
@@ -57,5 +63,18 @@
 <script>
 export default {
   name: "Header",
+  mounted() {
+    this.$lottie.loadAnimation({
+      container: this.$refs.lottie,
+      loop: true,
+      autoplay: true,
+      path: "/json/lottie-scroll-down.json",
+    });
+  },
+  methods: {
+    scrollDown() {
+      window.scroll({ top: 750, behavior: "smooth" });
+    },
+  },
 };
 </script>

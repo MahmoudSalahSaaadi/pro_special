@@ -9,11 +9,12 @@
           <img src="~assets/images/Mask Group 14874.png" alt="" srcset="" />
         </splide-slide>
         <splide-slide>
-          <img :src="images" />
+          <!-- <img :src="images" /> -->
         </splide-slide>
         <splide-slide>
-          <div v-for="product in products" :key="product.id">
-            <p>{{ product.id }}</p>
+          <div v-for="product in products.products" :key="product.id">
+            <!-- <p>{{ product.brand }}</p> -->
+            <img :src="product.images" alt="" />
           </div>
         </splide-slide>
       </splide>
