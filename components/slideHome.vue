@@ -14,7 +14,7 @@
         <splide-slide>
           <div v-for="product in products.products" :key="product.id">
             <!-- <p>{{ product.brand }}</p> -->
-            <img @error="imgError" :src="product.images" alt="" />
+            <img  :src="product.images" alt="" />
           </div>
         </splide-slide>
       </splide>
