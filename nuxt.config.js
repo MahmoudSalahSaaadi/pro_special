@@ -26,6 +26,8 @@ export default {
     "~/plugins/vue-fragment",
     "~/plugins/vue-js-modal.js",
     "~/plugins/vee-validate.js",
+    '~/plugins/imgError-plugin',
+
   ],
 
   loading: {
