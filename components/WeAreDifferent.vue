@@ -32,6 +32,17 @@
         </div>
       </div>
     </div>
+
+
+
+
+    <div> 
+    <h1 class="text-center p-4 text-red-600 text-xl m-4">
+      Example  
+      </h1>
+   
+ <p class="line-clamp-2 w-full p-4 text-orange-600 text-xl m-4 ">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  </div>
   </TheSection>
 </template>
 <script>

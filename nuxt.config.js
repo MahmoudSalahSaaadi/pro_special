@@ -44,7 +44,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/axios",
     [
       "nuxt-i18n",
       {

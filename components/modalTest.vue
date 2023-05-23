@@ -1,26 +1,4 @@
 <template>
-  <!-- <div id="app">
-    <div class="asd">
-      <button @click="showModal = true" class="button">Show Modal</button>
-    </div>
-    <transition name="fade" appear>
-      <div
-        class="modal-overlay"
-        v-if="showModal"
-        @click="showModal = false"
-      ></div>
-    </transition>
-    <transition name="pop" appear>
-      <div class="modal" role="dialog" v-if="showModal">
-        <h1>Vue Transitions</h1>
-        <p>
-          The <code>&lt;transition&gt;</code> component in Vue can create
-          wonderful animated entrances and exits.
-        </p>
-        <button @click="showModal = false" class="button">Hide Modal</button>
-      </div>
-    </transition>
-  </div> -->
   <section class="w-full">
     <div class="flex flex-row justify-center items-center">
       <span class="flex flex-row gap-4 justify-center items-center">
@@ -41,7 +19,15 @@
         width="80%"
         classes="!top-[190px] bg-white rounded-md"
       >
-        <veeValidateTest />
+        <div class="flex justify-center items-center gap-2 flex-col p-4">
+          <h1 class="text-lg text-gray-400 capitalize font-bold">Example Modal</h1>
+
+          <button
+            class="bg-slate-700 text-white capitalize text-lg p-6 m-6 rounded-lg"
+          >
+            close
+          </button>
+        </div>
       </modal>
     </div>
   </section>

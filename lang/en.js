@@ -3,6 +3,8 @@ export default {
   asd: "test-en",
   firstNameValidation: "first name between 3 to 64 characters",
   password: "min 10 number",
+  textlang:'test lang i18n',
+
 
   alw: {
     different: {

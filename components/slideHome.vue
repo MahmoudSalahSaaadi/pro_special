@@ -1,24 +1,25 @@
 <template>
   <section>
-    <client-only>
-      <splide class="z-20" :options="options">
-        <splide-slide>
-          <img src="~assets/images/Mask Group 14874.png" alt="" srcset="" />
-        </splide-slide>
-        <splide-slide>
-          <img src="~assets/images/Mask Group 14874.png" alt="" srcset="" />
-        </splide-slide>
-        <splide-slide>
-          <!-- <img :src="images" /> -->
-        </splide-slide>
-        <splide-slide>
-          <div v-for="product in products.products" :key="product.id">
-            <!-- <p>{{ product.brand }}</p> -->
-            <img  :src="product.images" alt="" />
-          </div>
-        </splide-slide>
-      </splide>
-    </client-only>
+    <div class="flex justify-center items-center w-full">
+      <h1
+        class="text-lg text-red-400 capitalize font-bold bg-slate-300 p-12 rounded-lg"
+      >
+        {{ $t("textlang") }}
+      </h1>
+    </div>
+
+    <div class="p-8">
+      <client-only>
+        <splide class="z-20" :options="options">
+          <splide-slide
+            v-for="(item, index) in Array(skeletonLength)"
+            :key="`theSkeleton-${index}`"
+          >
+            <img src="~assets/images/Mask Group 14874.png" alt="img" />
+          </splide-slide>
+        </splide>
+      </client-only>
+    </div>
     <div
       v-if="loading"
       class="grid grid-cols-1 gap-4 mt-5 md:grid-cols-2 lg:grid-cols-3"
@@ -79,45 +80,31 @@
 <script>
 export default {
   name: "SlideHome",
-  mounted() {
-    this.blogList();
-  },
-  methods: {
-    blogList() {
-      this.$axios
-        .get("https://dummyjson.com/products")
-        .then((response) => {
-          this.products = response.data;
-        })
-        .catch()
-        .finally();
-    },
-  },
 
   data() {
     return {
-      skeletonLength: 3,
+      skeletonLength: 5,
       loading: true,
       products: [],
       options: {
         rewind: false,
-        perPage: 2,
+        perPage: 3,
         arrows: true,
         gap: "1rem",
+        direction: this.$i18n.locale === "ar" ? "rtl" : "ltr",
         classes: {
           arrows:
-            "splide__arrows absolute -top-12 start-50 inline-block space-s-4",
+            "splide__arrows absolute -top-12 end-2 inline-block space-s-4",
           arrow:
             "inline-flex z-10 justify-center items-center p-2 w-8 h-8 rounded-full border-2 shadow-lg bg-[color:var(--accent-1)]) custom-slider-arrow-colors",
           prev: "splide__arrow--prev d-arrow-prev",
           next: "splide__arrow--next d-arrow-next",
           pagination:
             "inline-flex absolute -bottom-8 left-[-41%] right-1/2 z-10 flex-wrap justify-center items-center p-0 m-0 w-11/12 translate-x-1/2",
-          page: "inline-block bottom-0 p-0 m-1 w-2 h-2 lg:w-4 lg:h-4 rounded-full transition-all duration-200 custom-slider-bullet custom-is-active",
+          page: "inline-block bottom-0 p-0 m-1 w-2 h-2 lg:w-4 lg:h-4 rounded-full bg-[#af85b3] transition-all duration-200 custom-slider-bullet custom-is-active",
         },
-        direction: this.$i18n.locale === "ar" ? "rtl" : "ltr",
         breakpoints: {
-          3: {
+          992: {
             perPage: 1,
           },
         },

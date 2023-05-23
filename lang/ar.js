@@ -3,6 +3,7 @@ export default {
   asd: "تيست-ar",
   firstNameValidation: "الاسم الأول بين 3 إلى 64 حرفًا",
   password: "اقل 10 ارقام",
+  textlang:'test lang i18n',
 
   alw: {
     different: {
