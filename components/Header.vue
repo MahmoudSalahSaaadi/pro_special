@@ -50,17 +50,13 @@
         <div
           ref="lottie"
           role="button"
-          class="absolute bottom-0 left-1/2 top-5 bg-slate-400 w-28 h-28 -translate-x-1/2 cursor-pointer"
+          class="absolute bottom-0 left-1/2 top-5 bg-orange-400 w-20 h-20 -translate-x-1/2 cursor-pointer rounded-xl"
           @click.prevent="scrollDown"
         ></div>
       </div>
     </header>
     <div>
       <h1 class="text-center p-4 text-red-600 text-xl m-4">Example</h1>
-
-      <p class="line-clamp-2 w-full p-4 text-orange-600 text-xl m-4">
-        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-      </p>
     </div>
 
     <slideHome />

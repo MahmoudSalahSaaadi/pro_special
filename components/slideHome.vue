@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="flex justify-center items-center w-full">
+  <section >
+    <div class="flex justify-center items-center w-full mt-28">
       <h1
         class="text-lg text-red-400 capitalize font-bold bg-slate-300 p-12 rounded-lg"
       >
@@ -97,13 +97,13 @@ export default {
         rewind: false,
         perPage: 3,
         arrows: true,
-        gap: "1rem",
-        direction: this.$i18n.locale === "ar" ? "rtl" : "ltr",
+        gap: "2rem",
+        direction: this.$i18n.locale === "en" ? "rtl" : "ltr",
         classes: {
           arrows:
-            "splide__arrows absolute w-full top-20  inline-block  flex justify-between",
+            "splide__arrows absolute w-full md:top-20 -top-12  inline-block  flex md:justify-between justify-start",
           arrow:
-            "inline-flex z-10 -mr-12 -ml-12 justify-center items-center p-2 w-8 h-8 rounded-full border-2 shadow-lg bg-[color:var(--accent-1)]) custom-slider-arrow-colors disabled:bg-red-500 ",
+            "inline-flex z-10 md:-mr-12 md:-ml-12 -ml-0 -mr-0 justify-center items-center p-2 w-8 h-8 rounded-full border-2 shadow-lg bg-[color:var(--accent-1)]) custom-slider-arrow-colors disabled:bg-red-500 ",
           prev: "splide__arrow--prev d-arrow-prev ",
           next: "splide__arrow--next d-arrow-next",
           pagination:
