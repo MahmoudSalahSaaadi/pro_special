@@ -23,6 +23,7 @@
           <h1 class="text-lg text-gray-400 capitalize font-bold">Example Modal</h1>
 
           <button
+          @click.prevent="$modal.hide('eclubs-search-modal')"
             class="bg-slate-700 text-white capitalize text-lg p-6 m-6 rounded-lg"
           >
             close

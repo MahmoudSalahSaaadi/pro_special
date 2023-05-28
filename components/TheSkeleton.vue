@@ -11,7 +11,7 @@
 <script>
 import VueSkeletonLoader from "skeleton-loader-vue";
 
-export default {
+export default{
   name: "TheSkeleton",
   components: { VueSkeletonLoader },
   props: {
