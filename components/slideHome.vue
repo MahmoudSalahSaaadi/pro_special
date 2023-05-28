@@ -101,7 +101,7 @@ export default {
         direction: this.$i18n.locale === "ar" ? "rtl" : "ltr",
         classes: {
           arrows:
-            "splide__arrows absolute top-20 end-2  inline-block  flex justify-between",
+            "splide__arrows absolute w-full top-20  inline-block  flex justify-between",
           arrow:
             "inline-flex z-10 -mr-12 -ml-12 justify-center items-center p-2 w-8 h-8 rounded-full border-2 shadow-lg bg-[color:var(--accent-1)]) custom-slider-arrow-colors disabled:bg-red-500 ",
           prev: "splide__arrow--prev d-arrow-prev ",
