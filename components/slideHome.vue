@@ -1,5 +1,5 @@
 <template>
-  <section >
+  <section>
     <div class="flex justify-center items-center w-full mt-28">
       <h1
         class="text-lg text-red-400 capitalize font-bold bg-slate-300 p-12 rounded-lg"
@@ -15,7 +15,11 @@
             v-for="(item, index) in Array(skeletonLength)"
             :key="`theSkeleton-${index}`"
           >
-            <img src="~assets/images/Mask Group 14874.png" alt="img" />
+            <img
+              @error="imgError"
+              src="~assets/images/Mask Group 14874.png"
+              alt="img"
+            />
           </splide-slide>
 
           <splide-slide

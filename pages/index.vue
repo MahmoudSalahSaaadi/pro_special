@@ -11,6 +11,11 @@
     <modalTest />
     <BeautyJourney />
 
+
+    <veeValidateTest />
+
+    <imageError />
+
   </section>
 </template>
 
